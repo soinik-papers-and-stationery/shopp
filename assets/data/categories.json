@@ -1,0 +1,110 @@
+[
+  {
+    "id": "paper",
+    "name": "Paper",
+    "nameBn": "কাগজ",
+    "icon": "bi-file-earmark",
+    "color": "#0B5ED7",
+    "description": "A4 paper, photocopy paper, chart paper, color paper and more",
+    "subcategories": ["a4-paper", "photocopy-paper", "chart-paper", "color-paper", "craft-paper", "printer-paper"]
+  },
+  {
+    "id": "notebooks",
+    "name": "Notebooks & Books",
+    "nameBn": "নোটবুক ও খাতা",
+    "icon": "bi-journal",
+    "color": "#198754",
+    "description": "Exercise books, spiral notebooks, diaries, register books",
+    "subcategories": ["notebook", "exercise-book", "diary", "register-book"]
+  },
+  {
+    "id": "pens",
+    "name": "Pens",
+    "nameBn": "কলম",
+    "icon": "bi-pen",
+    "color": "#6f42c1",
+    "description": "Ballpoint pens, gel pens, fountain pens and more",
+    "subcategories": ["ball-pens", "gel-pens", "fountain-pens"]
+  },
+  {
+    "id": "pencils",
+    "name": "Pencils",
+    "nameBn": "পেন্সিল",
+    "icon": "bi-pencil",
+    "color": "#fd7e14",
+    "description": "Graphite pencils, mechanical pencils, color pencils",
+    "subcategories": ["mechanical-pencil", "graphite-pencil", "color-pencil"]
+  },
+  {
+    "id": "geometry",
+    "name": "Geometry & Math",
+    "nameBn": "জ্যামিতি ও গণিত",
+    "icon": "bi-rulers",
+    "color": "#dc3545",
+    "description": "Geometry boxes, scales, rulers, protractors",
+    "subcategories": ["geometry-box", "scale", "eraser", "sharpener"]
+  },
+  {
+    "id": "calculator",
+    "name": "Calculators",
+    "nameBn": "ক্যালকুলেটর",
+    "icon": "bi-calculator",
+    "color": "#0dcaf0",
+    "description": "Scientific calculators, basic calculators",
+    "subcategories": ["calculator"]
+  },
+  {
+    "id": "art-supplies",
+    "name": "Art Supplies",
+    "nameBn": "শিল্পকলার সামগ্রী",
+    "icon": "bi-palette",
+    "color": "#e83e8c",
+    "description": "Paints, brushes, color pencils, art paper",
+    "subcategories": ["paint", "brush", "art-paper"]
+  },
+  {
+    "id": "markers",
+    "name": "Markers",
+    "nameBn": "মার্কার",
+    "icon": "bi-highlighter",
+    "color": "#20c997",
+    "description": "Permanent markers, whiteboard markers, highlighters",
+    "subcategories": ["permanent-marker", "whiteboard-marker", "highlighter"]
+  },
+  {
+    "id": "files",
+    "name": "Files & Folders",
+    "nameBn": "ফাইল ও ফোল্ডার",
+    "icon": "bi-folder",
+    "color": "#ffc107",
+    "description": "File folders, document holders, binders",
+    "subcategories": ["folders", "files"]
+  },
+  {
+    "id": "office-supplies",
+    "name": "Office Supplies",
+    "nameBn": "অফিস সামগ্রী",
+    "icon": "bi-briefcase",
+    "color": "#6c757d",
+    "description": "Staplers, glue, tape, scissors, envelopes",
+    "subcategories": ["stapler", "glue", "tape", "scissors", "envelope"]
+  },
+  {
+    "id": "gift-items",
+    "name": "Gift Items",
+    "nameBn": "উপহার সামগ্রী",
+    "icon": "bi-gift",
+    "color": "#d63384",
+    "description": "Gift wrap, school bags, water bottles, lunch boxes",
+    "subcategories": ["school-bag", "water-bottle", "lunch-box"]
+  },
+  {
+    "id": "craft",
+    "name": "Craft Supplies",
+    "nameBn": "ক্র্যাফট সামগ্রী",
+    "icon": "bi-scissors",
+    "color": "#198754",
+    "description": "Craft paper, glitter, foam sheets, stickers",
+    "subcategories": ["craft-paper", "sticker"]
+  }
+]

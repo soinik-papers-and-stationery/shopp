@@ -1,0 +1,249 @@
+/* ============================================================
+   Shoinik Paper & Stationeries - Responsive Stylesheet
+   ============================================================ */
+
+/* ---------- Extra Large (1400px+) ---------- */
+@media (min-width: 1400px) {
+  .container { max-width: 1320px; }
+
+  .hero-title { font-size: 4.2rem; }
+  .hero-description { font-size: 1.12rem; }
+}
+
+/* ---------- Large (992px - 1199px) ---------- */
+@media (max-width: 1199px) {
+  .section-pad { padding: 4rem 0; }
+}
+
+/* ---------- Medium (768px - 991px) ---------- */
+@media (max-width: 991px) {
+  :root { --navbar-h: 60px; }
+
+  .navbar-collapse {
+    position: fixed;
+    top: var(--navbar-h);
+    left: 0;
+    right: 0;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    box-shadow: var(--shadow-lg);
+    z-index: 1020;
+    max-height: calc(100vh - var(--navbar-h));
+    overflow-y: auto;
+  }
+
+  [data-theme="dark"] .navbar-collapse {
+    background: var(--bg-card);
+  }
+
+  .navbar-collapse .nav-link {
+    padding: 0.7rem 0.75rem !important;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .navbar-collapse .nav-link:last-child { border-bottom: none; }
+
+  .hero-section {
+    min-height: auto;
+    padding: 6rem 0 6rem;
+  }
+
+  .hero-illustration { margin-top: 2.5rem; }
+
+  .hero-stats { justify-content: center; }
+
+  .filter-card {
+    position: static;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-pad { padding: 3.5rem 0; }
+
+  .stats-section { padding: 3rem 0; }
+
+  .stat-item { margin-bottom: 2rem; }
+}
+
+/* ---------- Small (576px - 767px) ---------- */
+@media (max-width: 767px) {
+  .hero-section { padding: 5rem 0 5rem; }
+  .hero-title { font-size: 2rem; }
+  .hero-title-bn { font-size: 1rem; }
+  .hero-description { font-size: 0.92rem; }
+
+  .hero-stats {
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .hero-stat-num { font-size: 1.5rem; }
+
+  .section-pad { padding: 3rem 0; }
+
+  .section-title { font-size: 1.5rem; }
+
+  .btn-primary-custom,
+  .btn-secondary-custom,
+  .btn-outline-custom,
+  .btn-whatsapp {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.88rem;
+  }
+
+  .product-card-img-wrapper { height: 165px; }
+
+  .cart-sidebar { width: 100%; right: -100%; }
+
+  .order-form-card { padding: 1.25rem; }
+
+  .legal-content { padding: 1.5rem; }
+
+  .footer { padding-top: 2.5rem; }
+
+  .footer-bottom { text-align: center; }
+
+  .page-banner { padding: 2.5rem 0; }
+  .page-banner h1 { font-size: 1.6rem; }
+
+  .floating-whatsapp { bottom: 80px; right: 16px; width: 50px; height: 50px; font-size: 1.4rem; }
+  .back-to-top { bottom: 16px; right: 16px; }
+
+  .map-wrapper { height: 260px; }
+
+  .gallery-item img { height: 170px; }
+
+  .toast-container-custom { left: 16px; right: 16px; }
+  .toast-custom { min-width: auto; }
+}
+
+/* ---------- Extra Small (< 576px) ---------- */
+@media (max-width: 575px) {
+  .hero-section { padding: 4.5rem 0 4rem; }
+
+  .hero-badge { font-size: 0.75rem; }
+
+  .hero-stats { gap: 1rem; }
+
+  .hero-stat-num { font-size: 1.35rem; }
+
+  .category-icon-wrap { width: 50px; height: 50px; font-size: 1.5rem; }
+
+  .product-card-img-wrapper { height: 150px; }
+
+  .product-card-img-wrapper img { width: 110px; height: 110px; }
+
+  .stats-section .row > div { flex: 0 0 50%; max-width: 50%; }
+
+  .stat-number { font-size: 2.2rem; }
+
+  .brand-item { padding: 0 1rem; font-size: 0.82rem; }
+
+  .footer-social { flex-wrap: wrap; }
+
+  .contact-info-card { padding: 1.5rem; }
+
+  .error-number { font-size: 8rem; }
+
+  .search-input { font-size: 0.88rem; }
+
+  .payment-option { padding: 0.75rem; }
+}
+
+/* ---------- Touch devices ---------- */
+@media (hover: none) {
+  .product-card:hover { transform: none; }
+  .category-card:hover { transform: none; }
+  .btn-primary-custom:hover { transform: none; }
+  .btn-secondary-custom:hover { transform: none; }
+  .btn-whatsapp:hover { transform: none; }
+  .social-btn:hover { transform: none; }
+}
+
+/* ---------- Reduced Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal, .reveal-left, .reveal-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-illustration svg { animation: none; }
+  .floating-whatsapp { animation: none; }
+  .brands-inner { animation: none; }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  :root {
+    --bg: white;
+    --bg-card: white;
+    --text-primary: black;
+    --text-secondary: #333;
+  }
+
+  .hero-section {
+    color: black;
+    background: white;
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .hero-title, .hero-title-bn, .hero-description { color: black; }
+
+  .stats-section {
+    background: #f0f4ff;
+    color: black;
+  }
+
+  .stat-number, .stat-label { color: black; }
+}
+
+/* ---------- High DPI / Retina ---------- */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .brand-icon, .footer-brand-icon { image-rendering: -webkit-optimize-contrast; }
+}
+
+/* ---------- Landscape Mobile ---------- */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero-section {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+
+  .cart-sidebar { max-height: 100vh; }
+}
+
+/* ---------- Dark mode specific adjustments ---------- */
+[data-theme="dark"] .hero-section::after {
+  background: var(--bg);
+}
+
+[data-theme="dark"] .stats-section::before {
+  opacity: 0.03;
+}
+
+[data-theme="dark"] .product-card-img-wrapper img {
+  filter: brightness(0.9);
+}
+
+[data-theme="dark"] .gallery-item img {
+  filter: brightness(0.85);
+}
+
+[data-theme="dark"] .brand-item {
+  border-color: var(--border);
+}
+
+/* ---------- Large Nav Adjustments ---------- */
+@media (min-width: 992px) {
+  .navbar-nav .nav-item:last-child .nav-link { margin-right: 0; }
+
+  .navbar .container-fluid { gap: 0.5rem; }
+}

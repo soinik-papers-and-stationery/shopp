@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Shoinik Paper & Stationeries</title>
+<meta name="description" content="Take a visual tour of Shoinik Paper & Stationeries - browse photos of our shop, products and more.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://shoinikpaper.com/gallery.html">
+<meta property="og:title" content="Gallery | Shoinik Paper & Stationeries">
+<meta property="og:description" content="A visual tour of our shop and products.">
+<meta property="og:image" content="assets/images/logo/logo.svg">
+<meta name="theme-color" content="#F8F9FA">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<script src="assets/js/theme.js"></script>
+</head>
+<body>
+
+<div id="page-loader" aria-hidden="true">
+  <div class="loader-logo">Shoinik</div>
+  <div class="loader-spinner"></div>
+</div>
+<div id="page-progress" class="page-progress"></div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-icon"><i class="bi bi-pencil-fill"></i></span>
+      <span class="brand-text">
+        <span class="brand-name">Shoinik Paper</span>
+        <span class="brand-name-bn">সৈনিক পেপার এন্ড স্টেশনারিজ</span>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list" style="font-size:1.5rem;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <form class="position-relative me-lg-3 mb-2 mb-lg-0" id="navbar-search-form" role="search" style="max-width:240px;">
+        <label for="navbar-search" class="visually-hidden">Search products</label>
+        <input type="search" id="navbar-search" class="form-control" placeholder="Search products..." autocomplete="off" style="border-radius:50px;font-size:0.85rem;padding:0.5rem 1rem;">
+        <div class="search-results-dropdown" id="search-results-dropdown"></div>
+      </form>
+      <div class="d-flex align-items-center gap-2">
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+          <i class="bi bi-moon-fill"></i>
+        </button>
+        <a href="order.html" class="btn-primary-custom cart-btn" data-action="open-cart" role="button" aria-label="Open shopping cart" onclick="event.preventDefault(); Cart.openSidebar();">
+          <i class="bi bi-cart3"></i>
+          <span class="d-none d-sm-inline">Cart</span>
+          <span class="cart-count" style="display:none;">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-banner" style="margin-top:var(--navbar-h);">
+  <div class="container">
+    <h1>Gallery</h1>
+    <p>A visual tour of our shop and products</p>
+  </div>
+</section>
+
+<nav class="breadcrumb-section" aria-label="breadcrumb">
+  <div class="container">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+    </ol>
+  </div>
+</nav>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+      <div class="col">
+        <div class="gallery-item reveal" data-full="assets/images/gallery/gallery-1.svg" data-caption="Shop front display" tabindex="0" role="button" aria-label="View shop front display">
+          <img src="assets/images/gallery/gallery-1.svg" alt="Shop front display" class="lazy" loading="lazy" width="400" height="220">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item reveal delay-1" data-full="assets/images/gallery/gallery-2.svg" data-caption="Paper and notebook section" tabindex="0" role="button" aria-label="View paper and notebook section">
+          <img src="assets/images/gallery/gallery-2.svg" alt="Paper and notebook section" class="lazy" loading="lazy" width="400" height="220">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item reveal delay-2" data-full="assets/images/gallery/gallery-3.svg" data-caption="Pen and pencil display" tabindex="0" role="button" aria-label="View pen and pencil display">
+          <img src="assets/images/gallery/gallery-3.svg" alt="Pen and pencil display" class="lazy" loading="lazy" width="400" height="220">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item reveal delay-3" data-full="assets/images/gallery/gallery-4.svg" data-caption="Art supplies corner" tabindex="0" role="button" aria-label="View art supplies corner">
+          <img src="assets/images/gallery/gallery-4.svg" alt="Art supplies corner" class="lazy" loading="lazy" width="400" height="220">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item reveal" data-full="assets/images/gallery/gallery-5.svg" data-caption="Office supplies aisle" tabindex="0" role="button" aria-label="View office supplies aisle">
+          <img src="assets/images/gallery/gallery-5.svg" alt="Office supplies aisle" class="lazy" loading="lazy" width="400" height="220">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item reveal delay-1" data-full="assets/images/gallery/gallery-6.svg" data-caption="Geometry and math tools" tabindex="0" role="button" aria-label="View geometry and math tools">
+          <img src="assets/images/gallery/gallery-6.svg" alt="Geometry and math tools" class="lazy" loading="lazy" width="400" height="220">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item reveal delay-2" data-full="assets/images/gallery/gallery-7.svg" data-caption="Customer service counter" tabindex="0" role="button" aria-label="View customer service counter">
+          <img src="assets/images/gallery/gallery-7.svg" alt="Customer service counter" class="lazy" loading="lazy" width="400" height="220">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item reveal delay-3" data-full="assets/images/gallery/gallery-8.svg" data-caption="School bag and gift items" tabindex="0" role="button" aria-label="View school bag and gift items">
+          <img src="assets/images/gallery/gallery-8.svg" alt="School bag and gift items" class="lazy" loading="lazy" width="400" height="220">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <button class="lightbox-close" aria-label="Close gallery image"><i class="bi bi-x-lg"></i></button>
+  <img src="" alt="" class="lightbox-img">
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <span class="footer-brand-icon"><i class="bi bi-pencil-fill"></i></span>
+          <div>
+            <span class="footer-brand-name">Shoinik Paper & Stationeries</span>
+            <span class="footer-brand-name-bn text-bangla">সৈনিক পেপার এন্ড স্টেশনারিজ</span>
+          </div>
+        </div>
+        <p class="footer-desc">Your trusted neighborhood stationery shop in Bogra, Bangladesh. Quality products, honest prices, and friendly service since day one.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/8801724389919" target="_blank" rel="noopener" class="social-btn whatsapp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="social-btn facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="tel:+8801724389919" class="social-btn phone" aria-label="Call us"><i class="bi bi-telephone-fill"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h3 class="footer-heading">Support</h3>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="order.html">Track Order</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h3 class="footer-heading">Contact Info</h3>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></span>
+          <span class="footer-contact-text">Bogra, Rajshahi Division, Bangladesh</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-telephone-fill"></i></span>
+          <span class="footer-contact-text"><a href="tel:+8801724389919">01724-389919</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-whatsapp"></i></span>
+          <span class="footer-contact-text"><a href="https://wa.me/8801724389919" target="_blank" rel="noopener">+880 1724-389919</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-clock-fill"></i></span>
+          <span class="footer-contact-text">Open Daily: 9:00 AM – 9:00 PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p class="footer-bottom-text mb-0">&copy; <span id="current-year"></span> Shoinik Paper & Stationeries. All rights reserved. | Owner: Torikul Islam</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CART SIDEBAR ============ -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-sidebar" id="cart-sidebar" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h2 class="h5 mb-0"><i class="bi bi-cart3"></i> Your Cart</h2>
+    <button class="btn-close" data-action="close-cart" aria-label="Close cart"></button>
+  </div>
+  <div class="cart-items-container" id="cart-items-container">
+    <div class="cart-empty" id="cart-empty">
+      <i class="bi bi-cart-x"></i>
+      <p>Your cart is empty</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span class="cart-total-label">Subtotal</span>
+      <span class="cart-total-value" id="cart-total">৳0</span>
+    </div>
+    <button class="btn-primary-custom w-100 justify-content-center" id="cart-checkout-btn" disabled>
+      <i class="bi bi-bag-check"></i> Proceed to Order
+    </button>
+  </div>
+</aside>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<a href="https://wa.me/8801724389919?text=Hello%2C%20I%20want%20to%20order%20from%20Shoinik%20Paper%20%26%20Stationeries" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+  <span class="floating-whatsapp-tooltip">Chat with us!</span>
+</a>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/search.js"></script>
+
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

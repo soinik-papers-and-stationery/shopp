@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Uddin",
+    "nameBn": "রহিম উদ্দিন",
+    "location": "Bogra",
+    "avatar": "RU",
+    "rating": 5,
+    "date": "2024-12-10",
+    "review": "Excellent shop! I've been buying all my stationery here for years. Quality products at very reasonable prices. Highly recommended!",
+    "reviewBn": "দারুণ দোকান! বছরের পর বছর ধরে এখান থেকে কিনছি। মানসম্পন্ন পণ্য, সাশ্রয়ী মূল্য।",
+    "product": "A4 Paper Ream"
+  },
+  {
+    "id": 2,
+    "name": "Fatema Begum",
+    "nameBn": "ফাতেমা বেগম",
+    "location": "Bogra",
+    "avatar": "FB",
+    "rating": 5,
+    "date": "2024-11-25",
+    "review": "Best stationery shop in the area. Very helpful staff and wide variety of products. My kids love the art supplies here.",
+    "reviewBn": "এলাকার সেরা স্টেশনারি দোকান। খুবই সহায়ক কর্মচারী এবং পণ্যের বিশাল সংগ্রহ।",
+    "product": "Watercolor Paint Set"
+  },
+  {
+    "id": 3,
+    "name": "Karim Hossain",
+    "nameBn": "করিম হোসেন",
+    "location": "Bogra Sadar",
+    "avatar": "KH",
+    "rating": 4,
+    "date": "2024-11-15",
+    "review": "Good collection of office supplies. Prices are competitive. Fast delivery when I order via WhatsApp.",
+    "reviewBn": "অফিস সামগ্রীর ভালো সংগ্রহ। প্রতিযোগিতামূলক মূল্য। হোয়াটসঅ্যাপে দ্রুত ডেলিভারি।",
+    "product": "File Folders"
+  },
+  {
+    "id": 4,
+    "name": "Nasrin Akter",
+    "nameBn": "নাসরিন আক্তার",
+    "location": "Bogra",
+    "avatar": "NA",
+    "rating": 5,
+    "date": "2024-10-30",
+    "review": "My children's school supplies needs are fully met here. Always in stock and very reasonable prices. Trust this shop completely!",
+    "reviewBn": "বাচ্চাদের স্কুলের সব প্রয়োজন এখানেই মেটে। সবসময় স্টকে থাকে, দাম সাশ্রয়ী।",
+    "product": "Geometry Box"
+  },
+  {
+    "id": 5,
+    "name": "Mahbub Rahman",
+    "nameBn": "মাহবুব রহমান",
+    "location": "Bogra",
+    "avatar": "MR",
+    "rating": 5,
+    "date": "2024-10-12",
+    "review": "Top quality stationery shop. The owner Torikul bhai is very knowledgeable and always helps find the right product.",
+    "reviewBn": "শীর্ষমানের স্টেশনারি দোকান। মালিক তরিকুল ভাই খুব জ্ঞানী এবং সঠিক পণ্য খুঁজে পেতে সাহায্য করেন।",
+    "product": "Scientific Calculator"
+  },
+  {
+    "id": 6,
+    "name": "Sumaiya Islam",
+    "nameBn": "সুমাইয়া ইসলাম",
+    "location": "Bogra",
+    "avatar": "SI",
+    "rating": 4,
+    "date": "2024-09-20",
+    "review": "Great selection of art supplies. Got everything for my daughter's art project in one place. Will definitely come back!",
+    "reviewBn": "শিল্পকলার সামগ্রীর দারুণ সংগ্রহ। মেয়ের আর্ট প্রজেক্টের সব এক জায়গায় পেলাম।",
+    "product": "Art Supplies"
+  }
+]

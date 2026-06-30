@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<rect width="400" height="300" fill="#e8eef9"/>
+<rect x="0" y="0" width="400" height="300" fill="url(#grad2)" opacity="0.5"/>
+<defs>
+<linearGradient id="grad2" x1="0" y1="0" x2="400" y2="300">
+<stop offset="0" stop-color="#0B5ED7"/>
+<stop offset="1" stop-color="#198754"/>
+</linearGradient>
+</defs>
+<circle cx="200" cy="130" r="45" fill="#ffffff" opacity="0.9"/>
+<rect x="175" y="105" width="50" height="50" rx="6" fill="none" stroke="#0B5ED7" stroke-width="3"/>
+<text x="200" y="220" font-size="18" text-anchor="middle" fill="#ffffff" font-weight="bold" font-family="sans-serif">Shop Gallery 2</text>
+</svg>

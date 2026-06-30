@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offers & Discounts | Shoinik Paper & Stationeries</title>
+<meta name="description" content="Check out our current discounts, seasonal offers and special deals on stationery, school supplies and office essentials.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://shoinikpaper.com/offers.html">
+<meta property="og:title" content="Offers & Discounts | Shoinik Paper & Stationeries">
+<meta property="og:description" content="Current discounts and special deals on stationery.">
+<meta property="og:image" content="assets/images/logo/logo.svg">
+<meta name="theme-color" content="#F8F9FA">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<script src="assets/js/theme.js"></script>
+</head>
+<body>
+
+<div id="page-loader" aria-hidden="true">
+  <div class="loader-logo">Shoinik</div>
+  <div class="loader-spinner"></div>
+</div>
+<div id="page-progress" class="page-progress"></div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-icon"><i class="bi bi-pencil-fill"></i></span>
+      <span class="brand-text">
+        <span class="brand-name">Shoinik Paper</span>
+        <span class="brand-name-bn">সৈনিক পেপার এন্ড স্টেশনারিজ</span>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list" style="font-size:1.5rem;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <form class="position-relative me-lg-3 mb-2 mb-lg-0" id="navbar-search-form" role="search" style="max-width:240px;">
+        <label for="navbar-search" class="visually-hidden">Search products</label>
+        <input type="search" id="navbar-search" class="form-control" placeholder="Search products..." autocomplete="off" style="border-radius:50px;font-size:0.85rem;padding:0.5rem 1rem;">
+        <div class="search-results-dropdown" id="search-results-dropdown"></div>
+      </form>
+      <div class="d-flex align-items-center gap-2">
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+          <i class="bi bi-moon-fill"></i>
+        </button>
+        <a href="order.html" class="btn-primary-custom cart-btn" data-action="open-cart" role="button" aria-label="Open shopping cart" onclick="event.preventDefault(); Cart.openSidebar();">
+          <i class="bi bi-cart3"></i>
+          <span class="d-none d-sm-inline">Cart</span>
+          <span class="cart-count" style="display:none;">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-banner" style="margin-top:var(--navbar-h);">
+  <div class="container">
+    <h1>Offers & Discounts</h1>
+    <p>Don't miss out on our current deals and seasonal promotions</p>
+  </div>
+</section>
+
+<nav class="breadcrumb-section" aria-label="breadcrumb">
+  <div class="container">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Offers</li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============ CURRENT OFFERS ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-badge">Limited Time</span>
+      <h2 class="section-title">Current Discounts</h2>
+      <p class="section-subtitle mx-auto">Save big with our seasonal promotions and bundle deals</p>
+    </div>
+    <div class="row g-4" id="offers-grid">
+      <div class="col-md-6 col-lg-3">
+        <div class="offer-card reveal h-100">
+          <div class="offer-card-header" style="background:linear-gradient(135deg,#0B5ED7,#3D79E3);">
+            <i class="bi bi-backpack" style="font-size:1.5rem;"></i>
+            <div class="offer-discount-badge mt-2">20%</div>
+            <div class="offer-discount-text">OFF on School Supplies</div>
+          </div>
+          <div class="p-3">
+            <h3 class="h6 fw-bold">Back to School Sale</h3>
+            <p class="text-muted-custom" style="font-size:0.85rem;">Up to 20% off on exercise books, geometry sets, and pens.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="offer-code">SCHOOL20</span>
+              <small class="text-muted-custom">Until Mar 31</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="offer-card reveal delay-1 h-100">
+          <div class="offer-card-header" style="background:linear-gradient(135deg,#198754,#20a468);">
+            <i class="bi bi-briefcase" style="font-size:1.5rem;"></i>
+            <div class="offer-discount-badge mt-2">15%</div>
+            <div class="offer-discount-text">OFF Office Bundle</div>
+          </div>
+          <div class="p-3">
+            <h3 class="h6 fw-bold">Office Supplies Bundle</h3>
+            <p class="text-muted-custom" style="font-size:0.85rem;">Buy any 3 office items and save 15% on your order.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="offer-code">OFFICE15</span>
+              <small class="text-muted-custom">Until Feb 28</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="offer-card reveal delay-2 h-100">
+          <div class="offer-card-header" style="background:linear-gradient(135deg,#e83e8c,#f06aa8);">
+            <i class="bi bi-palette" style="font-size:1.5rem;"></i>
+            <div class="offer-discount-badge mt-2">25%</div>
+            <div class="offer-discount-text">OFF Art Supplies</div>
+          </div>
+          <div class="p-3">
+            <h3 class="h6 fw-bold">Art Lovers Special</h3>
+            <p class="text-muted-custom" style="font-size:0.85rem;">Paints, brushes and markers — all 25% off.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="offer-code">ART25</span>
+              <small class="text-muted-custom">Until Jan 31</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="offer-card reveal delay-3 h-100">
+          <div class="offer-card-header" style="background:linear-gradient(135deg,#fd7e14,#feb272);">
+            <i class="bi bi-layers" style="font-size:1.5rem;"></i>
+            <div class="offer-discount-badge mt-2">10%</div>
+            <div class="offer-discount-text">OFF Bulk Paper</div>
+          </div>
+          <div class="p-3">
+            <h3 class="h6 fw-bold">Bulk Paper Discount</h3>
+            <p class="text-muted-custom" style="font-size:0.85rem;">Buy 5+ A4 paper reams and save automatically.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="offer-code">BULK10</span>
+              <small class="text-muted-custom">All Year</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED OFFER PRODUCTS ============ -->
+<section class="section-pad bg-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-badge">On Sale Now</span>
+      <h2 class="section-title">Featured Discounted Products</h2>
+      <p class="section-subtitle mx-auto">Grab these deals before they're gone</p>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4" id="offer-products-grid">
+      <!-- Populated by products.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <span class="footer-brand-icon"><i class="bi bi-pencil-fill"></i></span>
+          <div>
+            <span class="footer-brand-name">Shoinik Paper & Stationeries</span>
+            <span class="footer-brand-name-bn text-bangla">সৈনিক পেপার এন্ড স্টেশনারিজ</span>
+          </div>
+        </div>
+        <p class="footer-desc">Your trusted neighborhood stationery shop in Bogra, Bangladesh. Quality products, honest prices, and friendly service since day one.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/8801724389919" target="_blank" rel="noopener" class="social-btn whatsapp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="social-btn facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="tel:+8801724389919" class="social-btn phone" aria-label="Call us"><i class="bi bi-telephone-fill"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h3 class="footer-heading">Support</h3>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="order.html">Track Order</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h3 class="footer-heading">Contact Info</h3>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></span>
+          <span class="footer-contact-text">Bogra, Rajshahi Division, Bangladesh</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-telephone-fill"></i></span>
+          <span class="footer-contact-text"><a href="tel:+8801724389919">01724-389919</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-whatsapp"></i></span>
+          <span class="footer-contact-text"><a href="https://wa.me/8801724389919" target="_blank" rel="noopener">+880 1724-389919</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-clock-fill"></i></span>
+          <span class="footer-contact-text">Open Daily: 9:00 AM – 9:00 PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p class="footer-bottom-text mb-0">&copy; <span id="current-year"></span> Shoinik Paper & Stationeries. All rights reserved. | Owner: Torikul Islam</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CART SIDEBAR ============ -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-sidebar" id="cart-sidebar" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h2 class="h5 mb-0"><i class="bi bi-cart3"></i> Your Cart</h2>
+    <button class="btn-close" data-action="close-cart" aria-label="Close cart"></button>
+  </div>
+  <div class="cart-items-container" id="cart-items-container">
+    <div class="cart-empty" id="cart-empty">
+      <i class="bi bi-cart-x"></i>
+      <p>Your cart is empty</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span class="cart-total-label">Subtotal</span>
+      <span class="cart-total-value" id="cart-total">৳0</span>
+    </div>
+    <button class="btn-primary-custom w-100 justify-content-center" id="cart-checkout-btn" disabled>
+      <i class="bi bi-bag-check"></i> Proceed to Order
+    </button>
+  </div>
+</aside>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<a href="https://wa.me/8801724389919?text=Hello%2C%20I%20want%20to%20order%20from%20Shoinik%20Paper%20%26%20Stationeries" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+  <span class="floating-whatsapp-tooltip">Chat with us!</span>
+</a>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/search.js"></script>
+
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

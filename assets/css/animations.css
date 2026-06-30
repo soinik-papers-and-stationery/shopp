@@ -1,0 +1,443 @@
+/* ============================================================
+   Shoinik Paper & Stationeries - Animations Stylesheet
+   ============================================================ */
+
+/* ---------- Keyframe Animations ---------- */
+
+/* Float - hero illustration */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-12px) rotate(0.5deg); }
+  66% { transform: translateY(-6px) rotate(-0.5deg); }
+}
+
+/* Gentle pulse */
+@keyframes gentlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+/* Bounce in */
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  70% { transform: scale(0.95); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Slide in from bottom */
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Slide in from left */
+@keyframes slideLeft {
+  from { transform: translateX(-40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Slide in from right */
+@keyframes slideRight {
+  from { transform: translateX(40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Scale in */
+@keyframes scaleIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Shimmer loading skeleton */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Spin */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* WhatsApp pulse ring */
+@keyframes whatsappPulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Ticker for stats */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cart bounce on add */
+@keyframes cartBounce {
+  0%, 100% { transform: scale(1); }
+  30% { transform: scale(1.3); }
+  60% { transform: scale(0.9); }
+}
+
+/* Ripple */
+@keyframes ripple {
+  to { transform: scale(4); opacity: 0; }
+}
+
+/* Page progress bar */
+@keyframes progressGrow {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+/* Brand scroll */
+@keyframes brandScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Hero badge slide */
+@keyframes badgeSlide {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Checkbox custom tick */
+@keyframes checkmark {
+  0% { stroke-dashoffset: 24; }
+  100% { stroke-dashoffset: 0; }
+}
+
+/* Offer card shine */
+@keyframes offerShine {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* Toast slide in right */
+@keyframes toastSlideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Toast slide out right */
+@keyframes toastSlideOut {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+
+/* ---------- Animation Utility Classes ---------- */
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-pulse-gentle {
+  animation: gentlePulse 3s ease-in-out infinite;
+}
+
+.animate-bounce-in {
+  animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease forwards;
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.5s ease forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.5s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s ease forwards;
+}
+
+/* ---------- Hero Section Animations ---------- */
+.hero-badge { animation: badgeSlide 0.6s ease 0.2s both; }
+.hero-title { animation: slideUp 0.7s ease 0.3s both; }
+.hero-title-bn { animation: slideUp 0.7s ease 0.4s both; }
+.hero-description { animation: slideUp 0.7s ease 0.5s both; }
+.hero-stats { animation: slideUp 0.7s ease 0.6s both; }
+.hero-actions { animation: slideUp 0.7s ease 0.7s both; }
+.hero-illustration { animation: slideRight 0.8s ease 0.4s both; }
+
+/* ---------- Skeleton Loading ---------- */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--border) 25%,
+    rgba(255,255,255,0.5) 50%,
+    var(--border) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+[data-theme="dark"] .skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--border) 25%,
+    rgba(255,255,255,0.05) 50%,
+    var(--border) 75%
+  );
+  background-size: 200% 100%;
+}
+
+.skeleton-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  padding: 0;
+}
+
+.skeleton-img {
+  height: 200px;
+  border-radius: 0;
+}
+
+.skeleton-title {
+  height: 16px;
+  margin: 1rem 1rem 0.5rem;
+  width: 70%;
+}
+
+.skeleton-text {
+  height: 12px;
+  margin: 0.5rem 1rem;
+  width: 50%;
+}
+
+.skeleton-price {
+  height: 20px;
+  margin: 0.75rem 1rem;
+  width: 35%;
+}
+
+.skeleton-btn {
+  height: 36px;
+  margin: 0 1rem 1rem;
+  border-radius: var(--radius-sm);
+}
+
+/* ---------- Offer Card Shine Effect ---------- */
+.offer-card-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-card-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.15),
+    transparent
+  );
+  animation: offerShine 3s ease-in-out 2s infinite;
+}
+
+/* ---------- Cart Add Animation ---------- */
+.cart-count.animate {
+  animation: cartBounce 0.4s ease;
+}
+
+/* ---------- Button Ripple Effect ---------- */
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple .ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.35);
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  pointer-events: none;
+}
+
+/* ---------- Floating WhatsApp Animation ---------- */
+.floating-whatsapp {
+  animation: whatsappPulse 2.5s infinite;
+}
+
+.floating-whatsapp:hover {
+  animation: none;
+}
+
+/* ---------- Page Transition ---------- */
+.page-transition {
+  animation: fadeIn 0.4s ease;
+}
+
+/* ---------- Stagger Children Animation ---------- */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.stagger-children.animate > *:nth-child(1) { animation: slideUp 0.5s ease 0.1s forwards; }
+.stagger-children.animate > *:nth-child(2) { animation: slideUp 0.5s ease 0.2s forwards; }
+.stagger-children.animate > *:nth-child(3) { animation: slideUp 0.5s ease 0.3s forwards; }
+.stagger-children.animate > *:nth-child(4) { animation: slideUp 0.5s ease 0.4s forwards; }
+.stagger-children.animate > *:nth-child(5) { animation: slideUp 0.5s ease 0.5s forwards; }
+.stagger-children.animate > *:nth-child(6) { animation: slideUp 0.5s ease 0.6s forwards; }
+.stagger-children.animate > *:nth-child(7) { animation: slideUp 0.5s ease 0.7s forwards; }
+.stagger-children.animate > *:nth-child(8) { animation: slideUp 0.5s ease 0.8s forwards; }
+
+/* ---------- Navbar Scroll Effect ---------- */
+.navbar {
+  transition: background 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+}
+
+.navbar.scrolled {
+  height: 60px;
+}
+
+/* ---------- Input Focus Animation ---------- */
+.form-control, .form-select {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ---------- Toast Animations ---------- */
+.toast-custom {
+  animation: toastSlideIn 0.3s ease forwards;
+}
+
+.toast-custom.removing {
+  animation: toastSlideOut 0.3s ease forwards;
+}
+
+/* ---------- Image Reveal ---------- */
+img.lazy {
+  transition: opacity 0.5s ease, filter 0.5s ease;
+  filter: blur(4px);
+}
+
+img.lazy.loaded {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* ---------- Number Counter ---------- */
+.counter-num {
+  animation: countUp 0.8s ease forwards;
+}
+
+/* ---------- Accordion Animation ---------- */
+.accordion-collapse {
+  transition: height 0.3s ease;
+}
+
+/* ---------- Product Card Overlay ---------- */
+.product-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11,94,215,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.product-card:hover .product-card-overlay {
+  opacity: 1;
+}
+
+.product-card-overlay-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: none;
+}
+
+.product-card-overlay-btn:hover {
+  transform: scale(1.15);
+}
+
+/* ---------- Scroll Progress Indicator ---------- */
+.page-progress {
+  transition: width 0.1s linear;
+}
+
+/* ---------- Smooth Scroll for anchor links ---------- */
+a[href^="#"] {
+  scroll-behavior: smooth;
+}
+
+/* ---------- Category Card Hover Glow ---------- */
+.category-card:hover {
+  box-shadow: 0 8px 32px rgba(11,94,215,0.15);
+}
+
+/* ---------- Feature Card Icon Spin on Hover ---------- */
+.feature-card:hover .feature-icon i {
+  animation: spin 0.5s ease;
+  animation-iteration-count: 1;
+}
+
+/* ---------- Disable animations in prefers-reduced-motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .hero-badge,
+  .hero-title,
+  .hero-title-bn,
+  .hero-description,
+  .hero-stats,
+  .hero-actions,
+  .hero-illustration,
+  .animate-float,
+  .animate-pulse-gentle,
+  .animate-bounce-in,
+  .animate-slide-up,
+  .animate-slide-left,
+  .animate-slide-right,
+  .animate-fade-in,
+  .animate-scale-in,
+  .stagger-children > *,
+  .floating-whatsapp,
+  .brands-inner,
+  .offer-card-header::before,
+  .skeleton {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  img.lazy {
+    filter: none !important;
+    transition: opacity 0.1s ease !important;
+  }
+}

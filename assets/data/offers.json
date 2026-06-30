@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Back to School Sale",
+    "titleBn": "স্কুল ফিরে যাওয়ার অফার",
+    "description": "Up to 20% off on all school supplies including exercise books, geometry sets, and pens.",
+    "descriptionBn": "সকল স্কুল সামগ্রীতে ২০% পর্যন্ত ছাড়।",
+    "discount": 20,
+    "code": "SCHOOL20",
+    "validUntil": "2025-03-31",
+    "color": "#0B5ED7",
+    "icon": "bi-backpack",
+    "categories": ["notebooks", "geometry", "pens", "pencils"],
+    "isActive": true,
+    "isFeatured": true
+  },
+  {
+    "id": 2,
+    "title": "Office Supplies Bundle",
+    "titleBn": "অফিস সামগ্রীর বান্ডেল",
+    "description": "Buy any 3 office items and get 15% off. Includes paper, files, staplers and more.",
+    "descriptionBn": "যেকোনো ৩টি অফিস আইটেম কিনলে ১৫% ছাড়।",
+    "discount": 15,
+    "code": "OFFICE15",
+    "validUntil": "2025-02-28",
+    "color": "#198754",
+    "icon": "bi-briefcase",
+    "categories": ["office-supplies", "paper", "files"],
+    "isActive": true,
+    "isFeatured": true
+  },
+  {
+    "id": 3,
+    "title": "Art Lovers Special",
+    "titleBn": "শিল্পীদের বিশেষ অফার",
+    "description": "25% off on all art supplies. Paints, brushes, markers and more.",
+    "descriptionBn": "সকল শিল্পকলার সামগ্রীতে ২৫% ছাড়।",
+    "discount": 25,
+    "code": "ART25",
+    "validUntil": "2025-01-31",
+    "color": "#e83e8c",
+    "icon": "bi-palette",
+    "categories": ["art-supplies", "markers"],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "id": 4,
+    "title": "Bulk Paper Discount",
+    "titleBn": "বাল্ক কাগজ ডিসকাউন্ট",
+    "description": "Buy 5 or more A4 paper reams and get 10% off automatically.",
+    "descriptionBn": "৫ বা তার বেশি A4 পেপার রিম কিনলে স্বয়ংক্রিয়ভাবে ১০% ছাড়।",
+    "discount": 10,
+    "code": "BULK10",
+    "validUntil": "2025-12-31",
+    "color": "#fd7e14",
+    "icon": "bi-layers",
+    "categories": ["paper"],
+    "isActive": true,
+    "isFeatured": false
+  }
+]

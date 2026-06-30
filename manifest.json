@@ -1,0 +1,20 @@
+{
+  "name": "Shoinik Paper & Stationeries",
+  "short_name": "Shoinik Paper",
+  "description": "Your trusted retail stationery shop in Bogra, Bangladesh",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#F8F9FA",
+  "theme_color": "#0B5ED7",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "business"],
+  "lang": "en-BD"
+}
